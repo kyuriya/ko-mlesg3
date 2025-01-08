@@ -4,8 +4,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # 파일 경로 설정
-testfp = '../data/ML-ESG3_Testset_Korean.json'  # Gold Standard 데이터
-gpt4_fp = '../data/Korean_FIT_1.json'  # GPT-4 결과 데이터
+testfp = '../dataset/ML-ESG3_Testset_Korean.json'  # Gold Standard 데이터
+gpt4_fp = '../dataset/Korean_FIT_1.json'  # GPT-4 결과 데이터
 
 
 # 데이터 로드

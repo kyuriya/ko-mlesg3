@@ -5,8 +5,8 @@ from rank_bm25 import BM25Okapi
 from utils import get_answer, parse_between
 
 # 데이터 로드
-trainfp = '../data/ML-ESG-3_Trainset_Korean.json'
-testfp = '../data/ML-ESG3_Testset_Korean.json'
+trainfp = '../dataset/ML-ESG-3_Trainset_Korean.json'
+testfp = '../dataset/ML-ESG3_Testset_Korean.json'
 
 with open(trainfp, 'r') as f:
     train = json.load(f)

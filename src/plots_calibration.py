@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 데이터 로드
-file_path = '../results/calibration.csv'
+file_path = '../dataset/calibration.csv'
 data = pd.read_csv(file_path)
 
 # 모델 및 태스크별 필터링
