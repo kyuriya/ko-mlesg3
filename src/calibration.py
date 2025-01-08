@@ -19,8 +19,8 @@ models = {
 }
 
 # 데이터 로드
-trainfp = '../data/ML-ESG-3_Trainset_Korean.json'
-testfp = '../data/ML-ESG3_Testset_Korean.json'
+trainfp = '../dataset/ML-ESG-3_Trainset_Korean.json'
+testfp = '../dataset/ML-ESG3_Testset_Korean.json'
 
 with open(trainfp, 'r') as f:
     train_data = json.load(f)
@@ -112,4 +112,4 @@ for model_name in tqdm(models.keys()):
 
 # 결과 데이터프레임 생성 및 저장
 df = pd.DataFrame(results)
-df.to_csv('../results/calibration.csv', index=False)
+df.to_csv('../dataset/calibration.csv', index=False)
