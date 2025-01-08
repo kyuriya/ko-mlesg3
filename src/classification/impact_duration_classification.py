@@ -2,7 +2,7 @@ import json
 import pandas as pd
 from tqdm import tqdm
 from rank_bm25 import BM25Okapi
-from utils import get_answer, parse_between
+from utils.utils import get_answer, parse_between
 
 # 데이터 로드
 trainfp = '../data/ML-ESG-3_Trainset_Korean.json'
