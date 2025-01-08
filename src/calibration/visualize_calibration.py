@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 데이터 로드
-file_path = '../dataset/calibration.csv'
+file_path = '../results/calibration/calibration.csv'
 data = pd.read_csv(file_path)
 
 # 모델 및 태스크별 필터링
@@ -35,7 +35,7 @@ sns.regplot(x=data['correct_logits'].values, y=data['accuracy'].values, scatter=
 
 # 그래프 저장
 plt.subplots_adjust(left=0.2, right=0.95, top=0.9, bottom=0.15)
-plt.savefig('../results/calibration.pdf', bbox_inches='tight', dpi=300)
+plt.savefig('../results/calibration/calibration.pdf', bbox_inches='tight', dpi=300)
 
 # Accuracy 분석 결과 저장
 output = []
@@ -46,4 +46,4 @@ for (model, task), batch in data.groupby(['model', 'task']):
     output.append([task, model, min_val, max_val, mean])
 
 output_df = pd.DataFrame(output, columns=['Task', 'Model', 'Min Accuracy', 'Max Accuracy', 'Mean Accuracy'])
-output_df.to_csv('../results/calibration_summary.csv', index=False)
+output_df.to_csv('../results/calibration/calibration_summary.csv', index=False)

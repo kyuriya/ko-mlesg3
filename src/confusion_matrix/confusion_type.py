@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # 파일 경로 설정
 testfp = '../dataset/ML-ESG3_Testset_Korean.json'  # Gold Standard 데이터
-gpt4_fp = '../dataset/Korean_FIT_1.json'  # GPT-4 결과 데이터
+gpt4_fp = '../results/gpt4-classification/Korean_FIT_1.json'  # GPT-4 결과 데이터
 
 
 # 데이터 로드
@@ -47,7 +47,7 @@ plt.ylabel('Actual (Gold Standard)', fontsize=12)
 plt.subplots_adjust(left=0.2, right=0.95, top=0.9, bottom=0.15)
 
 # confusion matrix 그래프 저장 경로
-cm_type_fp = '../results/cm_type.pdf'  
+cm_type_fp = '../results/confusion_matrix/cm_type.pdf'  
 
 # PDF로 저장
 plt.savefig(cm_type_fp, bbox_inches='tight', dpi=300)

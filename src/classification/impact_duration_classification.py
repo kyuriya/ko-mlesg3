@@ -5,8 +5,8 @@ from rank_bm25 import BM25Okapi
 from utils.utils import get_answer, parse_between
 
 # 데이터 로드
-trainfp = '../data/ML-ESG-3_Trainset_Korean.json'
-testfp = '../data/ML-ESG3_Testset_Korean.json'
+trainfp = '../dataset/ML-ESG-3_Trainset_Korean.json'
+testfp = '../dataset/ML-ESG3_Testset_Korean.json'
 
 with open(trainfp, 'r') as f:
     train = json.load(f)
@@ -80,4 +80,4 @@ for item in tqdm(test):
 
 # 결과 데이터프레임 생성 및 저장
 df_output = pd.DataFrame(output, columns=['prompt', 'generated', 'impact_duration'])
-df_output.to_csv('../results/impact_duration.csv', index=False)
+df_output.to_csv('../results/gpt4-classification/impact_duration.csv', index=False)

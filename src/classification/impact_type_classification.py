@@ -45,4 +45,4 @@ for item in tqdm(test):
 
 # 결과 CSV 저장
 df_output = pd.DataFrame(output, columns=['prompt', 'generated', 'impact_type'])
-df_output.to_csv('../results/impact_type.csv', index=False)
+df_output.to_csv('../results/gpt4-classification/impact_type.csv', index=False)

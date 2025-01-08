@@ -112,4 +112,4 @@ for model_name in tqdm(models.keys()):
 
 # 결과 데이터프레임 생성 및 저장
 df = pd.DataFrame(results)
-df.to_csv('../dataset/calibration.csv', index=False)
+df.to_csv('../results/calibration/calibration.csv', index=False)
