@@ -8,7 +8,7 @@ FinNLP-KDF-ECONLP@LREC-COLING-2024의 [Shared Task](https://sites.google.com/nlg
 |Impact_Length|61.50%|43.98%|
 
 ## Shared Task ML-ESG-3
-
+shared task
 
 ## Our Methodology
 
